@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Front End</title>
+    </head>
+    <body>
+        <h1>Front End {{name}}</h1>
+        <form action="/submit" method="post"> 
+            <p>iCon Name: </p>
+            <input type="text" name="iconName" placeholder="Click field to input text">
+            <p>Date: </p>
+            <input type="date" name="borrowDate">
+            <p>Student First Name: </p>
+            <input type="text" name="fName" placeholder="Click field to input text">
+            <p>Student Last Name: </p>
+            <input type="text" name="lName" placeholder="Click field to input text">
+            <p>Borrowed Equipment: </p>
+            <input type="text" name="borrowedEquipment" placeholder="Click field to input text">
+            <p></p>
+            <button type="submit">Send data over to backend</button>
+        </form>
+        <h1>{{studentID}}</h1>
+        <h1>{{password}}</h1>
+        {% if enabled %}
+            <p>If statements in html exist?</p>
+        {% elif enabled==false%}
+            <p>Else if statements in html exist?</p>
+        {% endif %}
+    </body>
+</html>

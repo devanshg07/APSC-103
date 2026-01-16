@@ -8,7 +8,7 @@ def areInputsValid(studentID, password, borrowDate): #returns a string message t
     return "error or no error"#placeholder
 
 
-#idk what working with the server will look like, but using an array of classes probably helps with format
+#idk what working with the server will look like, but using an array of classes might help with format
 def sendInfoToServer():
     print()#placeholder
 
@@ -39,3 +39,4 @@ def submit():
 if(__name__ == '__main__'):
     webbrowser.open("http://127.0.0.1:5000")
     app.run(debug=True)
+
